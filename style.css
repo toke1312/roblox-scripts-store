@@ -1,9 +1,55 @@
 body {
-    font-family: sans-serif;
-    padding: 20px;
-    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-#code {
-    height: 500px;
-    border: 1px solid #ccc;
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.store {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.script-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.script-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.script-item p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.buy-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #e64a19;
 }

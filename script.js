@@ -1,10 +1,8 @@
-fetch('scripts/death_block.lua')
-    .then(res => res.text())
-    .then(code => {
-        CodeMirror(document.getElementById("code"), {
-            value: code,
-            mode: "lua",
-            lineNumbers: true,
-            readOnly: true
-        });
-    });
+// სკრიპტის ყიდვის ფუნქცია
+function purchaseScript(scriptId) {
+    // აქ უნდა დაემატოს რჩევა, თუ როგორ ხდება ტრანზაქცია რობუქსებით
+    alert("თქვენ გსურთ შეიძინოთ " + scriptId + " სკრიპტი!");
+    
+    // აქ შეიძლება იყოს ლოგიკა, რომელიც ამოწმებს თუ მომხმარებელს აქვს საკმარისი რობუქსი
+    // და ამოწმებს თუ სკრიპტი უკვე შეძენილი აქვს
+}
